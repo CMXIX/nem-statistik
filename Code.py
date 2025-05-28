@@ -40,7 +40,7 @@ plt.style.use("default")
 import pandas as pd
 
 # Load users from CSV
-user_df = pd.read_csv("users.csv")
+user_df = pd.read_csv("Users.csv")
 
 # Hash passwords
 hashed_passwords = stauth.Hasher(user_df["password"].tolist()).generate()
